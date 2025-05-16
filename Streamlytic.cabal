@@ -76,6 +76,7 @@ executable Streamlytic
         bytestring >=0.12,
         time >= 1.12,
         wai >= 3.2,
+        happstack-server >= 3.2,
 
     -- Directories containing source files.
     hs-source-dirs: 
