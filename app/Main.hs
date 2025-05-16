@@ -5,7 +5,6 @@ import EarthquakeData (apiurl, parseEarthquakeData)
 import Network.HTTP.Simple (getResponseBody, httpLBS, parseRequest)
 import TimeConverter (convertTimestamp)
 
--- | Funkcija koja ispisuje potres u lijepom formatu
 printEarthquake :: Earthquake -> IO ()
 printEarthquake eq = do
   putStrLn "-----------------------------"
@@ -15,7 +14,6 @@ printEarthquake eq = do
   putStrLn $ "Više informacija: " ++ url eq
   putStrLn "-----------------------------"
 
--- | Main funkcija koja dohvaća podatke i ispisuje ih
 main :: IO ()
 main = do
   putStrLn "Dohvaćam podatke o potresima..."
